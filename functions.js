@@ -78,7 +78,17 @@ const multiplicationArray = function (arg1) {
     return sum
 };
 
-const divisionArray = function (arg1) {};
+const divisionArray = function (arg1) {
+    let sum = 0
+    for (let i = 0; i < arg1.length; i++){
+        if (i === 0){
+            sum = arg1[i]
+        } else {
+            sum /= arg1[i]
+        }        
+    }
+    return Number(sum.toFixed(3))
+};
 
 const oddArray = function (arg1) {};
 
