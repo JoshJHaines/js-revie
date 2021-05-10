@@ -90,8 +90,24 @@ const divisionArray = function (arg1) {
     return Number(sum.toFixed(3))
 };
 
-const oddArray = function (arg1) {};
+const oddArray = function (arg1) {
+    let oddArr = []
+    for (let i=0; i < arg1.length; i++){
+        if (arg1[i] % 2 !== 0) {
+            oddArr.push(arg1[i])
+        }
+    }
+    return oddArr
+};
 
-const evenArray = function (arg1) {};
+const evenArray = function (arg1) {
+    let evenArr = []
+    for (let i=0; i < arg1.length; i++){
+        if (arg1[i] % 2 === 0) {
+            evenArr.push(arg1[i])
+        }
+    }
+    return evenArr
+};
 
 const returnFruits = function (arg1) {};
