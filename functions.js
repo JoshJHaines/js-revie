@@ -58,9 +58,25 @@ const arraySum = function (arg1) {
     return sum
 };
 
-const arraySubtraction = function (arg1) {};
+const arraySubtraction = function (arg1) {
+    let sum = 0
+    for (let i of arg1){
+        sum -= i
+    }
+    return sum
+};
 
-const multiplicationArray = function (arg1) {};
+const multiplicationArray = function (arg1) {
+    let sum = 0
+    for (let i = 0; i < arg1.length; i++){
+        if (i === 0){
+            sum = arg1[i]
+        } else {
+            sum *= arg1[i]
+        }        
+    }
+    return sum
+};
 
 const divisionArray = function (arg1) {};
 
