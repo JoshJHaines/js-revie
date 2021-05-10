@@ -50,7 +50,13 @@ const returnArrayLength = function (arg1) {
     return arg1.length
 };
 
-const arraySum = function (arg1) {};
+const arraySum = function (arg1) {
+    let sum = 0
+    for (let i of arg1){
+        sum += i
+    }
+    return sum
+};
 
 const arraySubtraction = function (arg1) {};
 
