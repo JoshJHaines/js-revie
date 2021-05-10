@@ -110,4 +110,12 @@ const evenArray = function (arg1) {
     return evenArr
 };
 
-const returnFruits = function (arg1) {};
+const returnFruits = function (arg1) {
+    let newArr = []
+    for (let i of arg1){
+        if (i === "apple" || i === "orange" ){
+            newArr.push(i)
+        }
+    }
+    return newArr
+};
